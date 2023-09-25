@@ -1,9 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Saidou Salif Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="languages">
+        <img
+          src="./img/FR_GB.png"
+          alt="Maîtrise de la langue française et de l'anglais."
+        />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Accueil</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Mes compétences</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">À propos de moi</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Mes Projets</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hello, je m'appelle <strong>Saidou Salif</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Développeur Front-End
+      </p>
+      <img
+        src="img//Saidou-profil.jpg"
+        alt="Une photo de moi souriant"
+        class="intro__img"
+      />
+    </section>
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Compétences</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Développeur Front-End</h3>
+          <p>
+            Je suis un Développeur Front-End polyvalent. J'ai également une
+            solide maîtrise des fondamentaux du développement Web. <br />
+            J'utilise régulièrement depuis maintenant presque 2 ans HTML, CSS,
+            Vanilla JavaScript ou bien ES6.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">Mes Projets</a>
+    </section>
+
+    <!-- À propos de moi -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">À propos de moi</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Développeur Front-End, fan de course à pied.
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Je suis Développeur Front-End, j'aime apporter un plus en termes de
+          design que ce soit sur un projet existant ou bien en partant d'une
+          maquette Figma. J'aime créer des applications qui résolvent des
+          problèmes du monde réel et qui sont agréables à utiliser. Mes
+          spécialités incluent HTML, CSS et React JS.
+        </p>
+        <p>
+          Avant de me lancer dans le monde de l'informatique et du
+          développement, j'étais responsable qualité dans le service de la
+          sécurité. J'avais pour devoir de répondre au besoin de nos clients en
+          leurs offrants un maximum de sécurité dans les plus brefs délais.
+        </p>
+        <p>
+          Les compétences requises étaient l'écoute, la communication et la
+          négociation lors du déploiement d'agents de sécurité.
+        </p>
+      </div>
+
+      <img
+        src="img/beau-mur.jpg"
+        alt="Saidou devant un magnifique tag "
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- Mes projets -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Mes projets</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Une sélection de mes projets personnelle
+      </p>
+
+      <div class="portfolio">
+        <a href="oldagram.html" class="portfolio__item">
+          <img src="img/oldagram-square.png" alt="" class="portfolio__img" />
+        </a>
+
+        <a href="tenzies.html" class="portfolio__item">
+          <img src="img/tenzies.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <a href="generate-password.html" class="portfolio__item">
+          <img src="img/password-generator.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <a href="meme-generator.html" class="portfolio__item">
+          <img src="img/meme-generator.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <a href="dashboard.html" class="portfolio__item">
+          <img src="img/personal-dashboard.png" alt="" class="portfolio__img" />
+        </a>
+
+        <a href="airbnb-clone.html" class="portfolio__item">
+          <img src="img/airbnb.png" alt="airbnb clone" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a
+        href="mailto:saidou02100@gmail.com"
+        target="_blank"
+        class="footer__link"
+        >saidou02100@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/saidou-salif-b51a65254/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/SAIDOU11"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
