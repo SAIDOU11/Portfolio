@@ -25,4 +25,13 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#toggleTheme {
+  border: none;
+  background: none;
 }/*# sourceMappingURL=style.css.map */
