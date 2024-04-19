@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #504f4f;
 }
 
 h1,
@@ -34,4 +35,18 @@ button {
 #toggleTheme {
   border: none;
   background: none;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0.5em;
+}
+
+.fb {
+  color: #0866ff;
+}
+
+.in {
+  color: #0a66c2;
 }/*# sourceMappingURL=style.css.map */
