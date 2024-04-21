@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 html {
   box-sizing: border-box;
 }
@@ -11,7 +13,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #504f4f;
-  // font-family: "EB Garamond", serif;
-  font-family: "Libre Bodoni", serif;
+  height: 100vh;
+  background: linear-gradient(var(--bg-color-up) 35%, var(--bg-color-down));
+  color: var(--text-color);
+  font-family: u.$Garamond;
 }
