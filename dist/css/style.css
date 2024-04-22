@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--bg-color-up) 35%, var(--bg-color-down));
+  background: linear-gradient(var(--bg-color-dark-up) 45%, var(--bg-color-dark-down));
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -57,9 +57,9 @@ button {
 }
 
 :root {
-  --bg-color-up: #b88c67;
-  --bg-color-down: #ebdaca;
+  --bg-color-up: #cecece;
+  --bg-color-down: #484848;
   --text-color: #0f0504;
-  --bg-color-dark-up: #4d3c2f;
-  --bg-color-dark-down: #b88c67;
+  --bg-color-dark-up: #0d2847;
+  --bg-color-dark-down: #205d9e;
 }/*# sourceMappingURL=style.css.map */

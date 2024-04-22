@@ -14,7 +14,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--bg-color-up) 35%, var(--bg-color-down));
+  background: linear-gradient(
+    var(--bg-color-dark-up) 45%,
+    var(--bg-color-dark-down)
+  );
   color: var(--text-color);
   font-family: u.$Garamond;
 }
