@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--bg-color-dark-up) 45%, var(--bg-color-dark-down));
+  background: linear-gradient(var(--bg-color-up) 45%, var(--bg-color-down));
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -21,9 +21,13 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
-  margin: 0;
+  margin-top: 0;
   font-weight: 700;
   font-family: "Libre Bodoni", serif;
+}
+
+p {
+  margin-top: 0;
 }
 
 a,
@@ -49,17 +53,39 @@ button {
 }
 
 .fb {
-  color: #0866ff;
+  color: var(--facebook-color);
 }
 
 .in {
-  color: #0a66c2;
+  color: var(--linkedin-color);
 }
 
 :root {
-  --bg-color-up: #cecece;
-  --bg-color-down: #484848;
+  --bg-color-down: #cecece;
+  --bg-color-up: #484848;
   --text-color: #0f0504;
-  --bg-color-dark-up: #0d2847;
-  --bg-color-dark-down: #205d9e;
+  --facebook-color: #0866ff;
+  --linkedin-color: #0a66c2;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1em;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

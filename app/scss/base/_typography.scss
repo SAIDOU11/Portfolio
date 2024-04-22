@@ -4,9 +4,13 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
-  margin: 0;
+  margin-top: 0;
   font-weight: 700;
   font-family: u.$Bodoni;
+}
+
+p {
+  margin-top: 0;
 }
 
 a,
@@ -32,9 +36,9 @@ button {
 }
 
 .fb {
-  color: #0866ff;
+  color: var(--facebook-color);
 }
 
 .in {
-  color: #0a66c2;
+  color: var(--linkedin-color);
 }
