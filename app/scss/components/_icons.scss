@@ -1,0 +1,24 @@
+.fb {
+  color: var(--facebook-color);
+}
+
+.in {
+  color: var(--linkedin-color);
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5em 0.3em;
+  animation: icon-animation 1.5s ease-in-out 2;
+}
+
+@keyframes icon-animation {
+  50% {
+    font-size: 2.2rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}

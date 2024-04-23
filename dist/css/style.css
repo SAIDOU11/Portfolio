@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--darker-color) 25%, var(--lighter-color));
+  background: linear-gradient(var(--darker-color), var(--lighter-color) 85%);
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -50,24 +50,9 @@ button {
   background: none;
 }
 
-.icon {
-  cursor: pointer;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 0 0.3em;
-}
-
-.fb {
-  color: var(--facebook-color);
-}
-
-.in {
-  color: var(--linkedin-color);
-}
-
 :root {
-  --lighter-color: #eceef4;
-  --darker-color: #34384c;
+  --lighter-color: #f4faff;
+  --darker-color: #113264;
   --silver-color: #f4efec;
   --text-color: #0f0504;
   --facebook-color: #0866ff;
@@ -89,7 +74,7 @@ main {
 footer {
   width: 100%;
   position: fixed;
-  bottom: 0.5em;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +93,7 @@ footer {
   width: 200px;
   border: 2px solid var(--silver-color);
   border-radius: 50%;
+  background: #000;
 }
 .home__name {
   padding-bottom: 0.8em;
@@ -115,4 +101,29 @@ footer {
 }
 .home__name-last {
   color: var(--silver-color);
+}
+
+.fb {
+  color: var(--facebook-color);
+}
+
+.in {
+  color: var(--linkedin-color);
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5em 0.3em;
+  animation: icon-animation 1.5s ease-in-out 2;
+}
+
+@keyframes icon-animation {
+  50% {
+    font-size: 2.2rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
