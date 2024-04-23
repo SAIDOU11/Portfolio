@@ -23,6 +23,9 @@ h3 {
   line-height: 1.1;
   margin-top: 0;
   font-weight: 700;
+}
+
+h1 {
   font-family: "Libre Bodoni", serif;
 }
 
@@ -76,8 +79,8 @@ header {
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -86,6 +89,5 @@ footer {
   bottom: 0.5em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */
