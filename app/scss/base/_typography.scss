@@ -5,10 +5,12 @@ h2,
 h3 {
   line-height: 1.1;
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
   font-family: u.$Bodoni;
 }
 
@@ -35,7 +37,7 @@ button {
   cursor: pointer;
   font-size: 2rem;
   font-weight: 500;
-  padding: 0.5em;
+  padding: 0 0.3em;
 }
 
 .fb {
@@ -45,5 +47,3 @@ button {
 .in {
   color: var(--linkedin-color);
 }
-
-

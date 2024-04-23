@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--bg-color-up) 45%, var(--bg-color-down));
+  background: linear-gradient(var(--darker-color) 25%, var(--lighter-color));
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -22,10 +22,12 @@ h2,
 h3 {
   line-height: 1.1;
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
   font-family: "Libre Bodoni", serif;
 }
 
@@ -52,7 +54,7 @@ button {
   cursor: pointer;
   font-size: 2rem;
   font-weight: 500;
-  padding: 0.5em;
+  padding: 0 0.3em;
 }
 
 .fb {
@@ -64,8 +66,9 @@ button {
 }
 
 :root {
-  --bg-color-down: #cecece;
-  --bg-color-up: #484848;
+  --lighter-color: #eceef4;
+  --darker-color: #34384c;
+  --silver-color: #f4efec;
   --text-color: #0f0504;
   --facebook-color: #0866ff;
   --linkedin-color: #0a66c2;
@@ -89,5 +92,27 @@ footer {
   bottom: 0.5em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.home {
+  height: 100%;
+  padding-top: 20vh;
+  overflow: hidden;
+  text-align: center;
+}
+.home__image {
+  margin: 1em auto;
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--silver-color);
+  border-radius: 50%;
+}
+.home__name {
+  padding-bottom: 0.8em;
+  border-bottom: 2px solid var(--silver-color);
+}
+.home__name-last {
+  color: var(--silver-color);
 }/*# sourceMappingURL=style.css.map */
