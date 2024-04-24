@@ -5,13 +5,15 @@
 .in {
   color: var(--linkedin-color);
 }
+.dev-icon {
+  animation: icon-animation 1.5s ease-in-out 2;
+}
 
 .icon {
   cursor: pointer;
   font-size: 2rem;
   font-weight: 500;
   padding: 0.5em 0.3em;
-  animation: icon-animation 1.5s ease-in-out 2;
 }
 
 @keyframes icon-animation {

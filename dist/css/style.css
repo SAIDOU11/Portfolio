@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--darker-color), var(--lighter-color) 61%);
+  background: linear-gradient(var(--black-color), var(--white-color) 61%);
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -41,18 +41,14 @@ a:active {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 #toggleTheme {
   border: none;
   background: none;
 }
 
 :root {
-  --lighter-color: #fff;
-  --darker-color: #000;
+  --white-color: #fff;
+  --black-color: #000;
   --silver-color: #f4efec;
   --text-color: #0f0504;
   --facebook-color: #0866ff;
@@ -91,16 +87,30 @@ footer {
   margin: 1em auto;
   height: 200px;
   width: 200px;
-  border: 5px solid var(--lighter-color);
+  border: 5px solid var(--white-color);
   border-radius: 50%;
   background: #000;
 }
 .home__name {
   padding-bottom: 0.8em;
-  border-bottom: 2px solid var(--darker-color);
+  border-bottom: 2px solid var(--black-color);
 }
 .home__name-last {
-  color: var(--lighter-color);
+  color: var(--white-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+}
+
+.menu-btn {
+  color: var(--white-color);
+  font-size: 1.8rem;
 }
 
 .fb {
@@ -111,12 +121,15 @@ footer {
   color: var(--linkedin-color);
 }
 
+.dev-icon {
+  animation: icon-animation 1.5s ease-in-out 2;
+}
+
 .icon {
   cursor: pointer;
   font-size: 2rem;
   font-weight: 500;
   padding: 0.5em 0.3em;
-  animation: icon-animation 1.5s ease-in-out 2;
 }
 
 @keyframes icon-animation {
