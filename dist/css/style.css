@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(var(--darker-color), var(--lighter-color) 85%);
+  background: linear-gradient(var(--darker-color), var(--lighter-color) 61%);
   color: var(--text-color);
   font-family: "EB Garamond", serif;
 }
@@ -51,8 +51,8 @@ button {
 }
 
 :root {
-  --lighter-color: #f4faff;
-  --darker-color: #113264;
+  --lighter-color: #fff;
+  --darker-color: #000;
   --silver-color: #f4efec;
   --text-color: #0f0504;
   --facebook-color: #0866ff;
@@ -91,16 +91,16 @@ footer {
   margin: 1em auto;
   height: 200px;
   width: 200px;
-  border: 2px solid var(--silver-color);
+  border: 5px solid var(--lighter-color);
   border-radius: 50%;
   background: #000;
 }
 .home__name {
   padding-bottom: 0.8em;
-  border-bottom: 2px solid var(--silver-color);
+  border-bottom: 2px solid var(--darker-color);
 }
 .home__name-last {
-  color: var(--silver-color);
+  color: var(--lighter-color);
 }
 
 .fb {
