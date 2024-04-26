@@ -99,6 +99,22 @@ footer {
   color: var(--white-color);
 }
 
+.nav {
+  position: fixed;
+  background: #000;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 255ms;
+}
+
+.open-navigation {
+  transform: translateX(-100%);
+}
+
 button {
   cursor: pointer;
 }
@@ -108,7 +124,8 @@ button {
   border: none;
 }
 
-.menu-btn {
+.menu-btn,
+.nav-close {
   color: var(--white-color);
   font-size: 1.8rem;
 }
