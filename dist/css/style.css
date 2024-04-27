@@ -47,7 +47,7 @@ a:active {
 
 :root {
   --white-color: #fff;
-  --black-color: #000;
+  --black-color: #151515;
   --silver-color: #f4efec;
   --text-color: #0f0504;
   --facebook-color: #0866ff;
@@ -85,24 +85,20 @@ footer {
   text-align: center;
 }
 .home__image {
-  margin: 1em auto;
-  height: 200px;
+  margin: 0 auto 1.5em;
+  height: 220px;
   width: 200px;
-  border: 5px solid var(--white-color);
-  border-radius: 50%;
-  background: #000;
+  border: 2px solid var(--black-color);
+  border-radius: 1em;
 }
 .home__name {
   padding-bottom: 0.8em;
   border-bottom: 2px solid var(--black-color);
 }
-.home__name-last {
-  color: var(--white-color);
-}
 
 .nav {
   position: fixed;
-  background: #000;
+  background: var(--black-color);
   width: 100%;
   top: 0;
   right: 0;
